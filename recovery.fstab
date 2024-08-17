@@ -1,0 +1,14 @@
+# mount point       fstype    device                                                                flags
+/boot               emmc      /dev/block/platform/15540000.dwmmc0/by-name/BOOT                      flags=display="Boot";backup=1;flashimg=1;
+/recovery           emmc      /dev/block/platform/15540000.dwmmc0/by-name/RECOVERY                  flags=display="Recovery";backup=1;flashimg=1;
+/system             ext4      /dev/block/platform/15540000.dwmmc0/by-name/SYSTEM                    flags=display="System";backup=1;
+/system_image       emmc      /dev/block/platform/15540000.dwmmc0/by-name/SYSTEM                    flags=display="System image";backup=1;flashimg=1;
+/efs                ext4      /dev/block/platform/15540000.dwmmc0/by-name/EFS                       flags=display="Efs";
+/cache              ext4      /dev/block/platform/15540000.dwmmc0/by-name/CACHE                     flags=display="Cache";
+/data               ext4      /dev/block/platform/15540000.dwmmc0/by-name/USERDATA                  flags=display="Data";
+/misc               emmc      /dev/block/platform/15540000.dwmmc0/by-name/OTA                       flags=display="Misc";backup=1;flashimg=1;
+#/mmc1*              auto      auto                                                                  flags=display="Mmc1*";logical;
+#/usb*               auto      auto                                                                  flags=display="Usb*";logical;
+none                swap      /dev/block/zram0                                                      flags=display="None";
+/external_sd   vfat      /dev/block/mmcblk1p1 /dev/block/mmcblk1                                    flags=display="Micro SDcard";storage;wipeingui;removable
+/usbstorage	   vfat		 /dev/block/sda1									                        flags=display="USB Storage";storage;removable
