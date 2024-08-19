@@ -20,9 +20,11 @@ LOCAL_PATH := device/samsung/gts210ltexx
 
 # USB
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+# USB
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=adb \
-    service.adb.root=1  \
+    service.adb.root=1 \
     ro.boot.bootdevice=15540000.dwmmc0 \
     ro.boot.selinux=permissive
